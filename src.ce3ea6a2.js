@@ -21,4 +21,4 @@ function n(n,e,t,o){let i=null;Date.now();const m=a=>{i||(i=a);const d=Math.min(
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/counter-hero.js"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/buynow-mob.js"),require("./js/franchise.js"),require("./js/counter-adv.js"),require("./js/locations.js");
 },{"./sass/main.scss":"clu1","./js/counter-hero.js":"l9t7","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/buynow-mob.js":"c3nZ","./js/franchise.js":"wkSI","./js/counter-adv.js":"lQQc","./js/locations.js":"bcD2"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.c060af0c.js.map
+//# sourceMappingURL=/ice-cream/src.ce3ea6a2.js.map
