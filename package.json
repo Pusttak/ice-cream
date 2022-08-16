@@ -1,12 +1,12 @@
 {
-  "name": "ice-cream-landing",
+  "name": "ice-cream",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/Pusttak/ice-cream-landing",
+  "homepage": "https://github.com/Pusttak/ice-cream.git",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream-landing/"
+    "build": "parcel build src/*.html --public-url /ice-cream/"
   },
   "repository": {
     "type": "git",
