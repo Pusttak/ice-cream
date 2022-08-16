@@ -1,0 +1,73 @@
+<header id="header" class="header lock-padding">
+  <div class="js-menu-container">
+    <div class="header__container">
+      <a href="" class="header__logo link">
+        <img
+          class="logo__header"
+          alt="site logo"
+          srcset="../src/images/header-logo.png 1x, ../src/images/header-logo-2x.png 2x"
+          src="../src/images/header-logo.png "
+        />
+      </a>
+      <ul class="header__list list">
+        <li class="header__item">
+          <a href="#hero" class="header__link link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#prod" class="header__link link">About us</a>
+        </li>
+        <li class="header__item">
+          <a href="#about" class="header__link link">How it’s made?</a>
+        </li>
+        <li class="header__item">
+          <a href="#gallery" class="header__link link">Our products</a>
+        </li>
+        <li class="header__item">
+          <a href="#contact" class="header__link link">Contact</a>
+        </li>
+      </ul>
+      <button
+        class="open-menu-button js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="close-icon" width="20" height="20" aria-label="Mobile menu switch">
+          <use href="../src/images/header-icons.svg#burger"></use>
+        </svg>
+      </button>
+      <button class="header__button" data-buynow-open>Buy now &gt;</button>
+    </div>
+
+    <div class="burger__backdrop popup-link">
+      <a href="hero" class="popup-area"></a>
+      <div class="mob-menu" id="mobile-menu">
+        <button class="close-menu-button js-close-menu" type="button">
+          <svg class="burger-close" aria-label="Mobile menu switch">
+            <use href="../src/images/header-icons.svg#burger-close"></use>
+          </svg>
+        </button>
+        <button class="burger__button" data-buynow-mob-open data-buynow-mob-close>
+          Buy now &gt;
+        </button>
+        <ul class="burger__list list">
+          <li class="burger__item">
+            <a href="#hero" class="burger__link link">Home</a>
+          </li>
+          <li class="burger__item">
+            <a href="#prod" class="burger__link link">About us</a>
+          </li>
+          <li class="burger__item">
+            <a href="#about" class="burger__link link">How it’s made?</a>
+          </li>
+          <li class="burger__item">
+            <a href="#gallery" class="burger__link link">Our products</a>
+          </li>
+          <li class="burger__item">
+            <a href="#contact" class="burger__link link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,105 @@
+.advantages{
+  background-color: var(--bg-secondary);
+  padding-bottom: 97px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
+}
+
+.adv-list{
+    @media screen and (min-width: 768px) {
+    display: flex;
+    }
+}
+  
+.adv-list__item{
+  position: relative;
+  padding-top: 66px;
+  @media screen and (min-width: 768px) {
+    padding-top: 86px;
+    } 
+  @media screen and (min-width: 1280px) {
+    padding-top: 90px;
+    } 
+  &:not(:last-child){
+    @media screen and (min-width: 768px) {
+      margin-right: 60px;
+      } 
+    @media screen and (min-width: 1280px) {
+      margin-right: 30px;
+      } 
+  }
+  &:not(:last-child){
+    @media screen and (max-width: 767px) {
+      margin-bottom: 38px;
+    }
+  }
+  &:nth-child(1) {
+    .adv-list__title::before {
+      width: 33px;
+    background-image: url(../images/adv/adv-icon1-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/adv/adv-icon1-2x.png);
+      }
+    }
+  }
+  &:nth-child(2) {
+    .adv-list__title::before {
+      width: 50px;
+    background-image: url(../images/adv/adv-icon2-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/adv/adv-icon2-2x.png);
+    }
+    }
+  }
+  &:nth-child(3) {
+    .adv-list__title::before {
+      width: 44px;
+        background-image: url(../images/adv/adv-icon3-1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/adv/adv-icon3-2x.png);
+        }
+    }
+  }
+}
+
+
+.adv-list__title {
+  @include font(36px, 1.14, 0.04em, 400);
+  text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      @include font(48px, 1.14, 0.04em, 400);
+      text-transform: none;
+    } 
+    @media screen and (min-width: 1280px) {
+      @include font(58px, 1.14, 0.04em, 400);
+      text-transform: none;
+    } 
+  color: var(--accent-primary);
+  font-family: Titan One;
+  margin-bottom: 13px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  } 
+    &::before {
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: '';
+        background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;}
+  }
+
+.adv-list__text{
+  color: var(--text-dark);
+  @include font(12px, 1.7, 0.04em, bold);
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.7, 0.04em, bold);
+  } 
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.75, 0.02em, bold);
+  } 
+}
+

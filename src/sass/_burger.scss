@@ -1,0 +1,118 @@
+// .burger__backdrop {
+//   z-index: 98;
+//   z-index: 100;
+//   position: absolute;
+//   overflow: hidden;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: rgba(0, 0, 0, 0.8);
+//   opacity: 0;
+//   visibility: 0;
+
+//   transition: opacity var(--transition-time) var(--cubic-bezier);
+//   @media screen and (min-width: 1279px) {
+//     display: none;
+//   }
+//   &.open {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
+
+.mob-menu {
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  overflow-y: scroll;
+  transform: translateX(100%);
+  background-color: var(--bg-menu);
+  box-shadow: (-8px 0px 20px rgba(0, 0, 0, 0.25));
+
+  transition: transform var(--transition-time) var(--cubic-bezier);
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.js-menu-container.is-open .mob-menu {
+  transform: translateX(0);
+  // transition: transform var(--transition-time) var(--cubic-bezier);
+}
+
+.close-menu-button {
+  margin: 23px 22px 24px auto;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  fill: var(--white-color);
+  transition: fill var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    fill: #d41443;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 24px;
+  }
+}
+.burger-close {
+  width: 30px;
+  height: 30px;
+}
+.burger__button {
+  padding-left: 21px;
+  padding-right: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 45px;
+  margin: 0 auto 20px auto;
+  transition: var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #ecebeb;
+  }
+  @include font(16px, 1.31, 0.04em, 700);
+  border-radius: 22px;
+  color: var(--accent-primary);
+  background-color: var(--white-color);
+  border: none;
+}
+
+.burger__item {
+  padding-left: 21px;
+  padding-right: 21px;
+  border-top: 1px solid #e18298;
+  padding-bottom: 11px;
+  padding-top: 13px;
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+  }
+}
+.burger__link {
+  color: var(--white-color);
+  @include font(16px, 1.31, 0.03em, 700);
+  transition: var(--transition-time) var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--accent-primary);
+  }
+}
+.burger__link.current {
+  color: var(--accent-text-color);
+}

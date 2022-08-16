@@ -1,0 +1,229 @@
+.franchise__button {
+  font-family: inherit;
+  background: var(--accent-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  @include font(16px, 1.88, 0, 700);
+  border: 0px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.franchise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 553px;
+  backdrop-filter: blur(8px);
+  background-image: linear-gradient(90deg, rgba(255, 221, 225, 0.3) 35%, var(--white-color) 100%);
+  box-shadow: 0 8px 30px var(--contact-border);
+  border-radius: 24px;
+  opacity: 1;
+  padding: 40px;
+  z-index: 100;
+  transform: scale(1) translate(-50%, -50%);
+  transition-property: transform;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic-bezier);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 581px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+  }
+}
+.franchise__header {
+  // @include font(10px, 1.15, 0.03em, 700);
+  // color: var(--text-dark);
+  // margin-bottom: 12px;
+  // text-align: center;
+  // @media screen and (min-width: 480px) {
+  //   font-size: 16px;
+  // }
+  text-align: center;
+  color: var(--accent-primary);
+  // @include font(100%, 1.75, 0.03em, 400);
+  // @media screen and (min-width: 480px) {
+  //   font-size: 16px;
+  // }
+
+  @include font(24px, 1.75, 0.03em, 400);
+  line-height: 1em;
+  @media screen and (min-width: 480px) {
+    @include font(34px, 1.75, 0.03em, 400);
+    line-height: 1em;
+  }
+}
+
+.icon {
+  fill: currentColor;
+  width: 11px;
+  height: 11px;
+}
+
+.franchise__form {
+  width: 240px;
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 448px;
+  }
+}
+.franchise__field {
+  margin-bottom: 10px;
+}
+.franchise__field-comment {
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 20px;
+  }
+}
+.franchise__label {
+  margin-bottom: 4px;
+  color: var(--text-dark);
+  padding-left: 20px;
+  font-size: 12px;
+}
+.franchise__input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 24px;
+  padding-left: 35px;
+  outline: none;
+  color: var(--accent-primary);
+  transition-property: border-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic-bezier);
+  &:focus {
+    border-color: var(--accent-primary);
+  }
+  &:focus + .franchise__icon-img {
+    fill: var(--accent-primary);
+  }
+}
+
+.franchise__icon {
+  position: relative;
+  margin-top: 3px;
+}
+
+.franchise__icon-img {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  fill: currentColor;
+}
+.franchise__comment {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 24px;
+  resize: none;
+  padding: 12px 16px;
+  @include font(14px, 1.14, 0.01em, 500);
+  outline: none;
+  transition-property: border-color;
+  transition-duration: var(--transition-time);
+  transition-timing-function: var(--cubic-bezier);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    border-color: var(--accent-primary);
+  }
+}
+
+// .franchise__checkbox {
+//   text-align: center;
+// }
+
+// .franchise__policy {
+//   @include font(7px, 1.5, 0.03em, 700);
+//   color: var(--text-light);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 15px;
+//   & span {
+//     width: 16px;
+//     height: 15px;
+//     border: 1.5px solid #000000;
+//     border-radius: 2px;
+//     margin-right: 7px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     cursor: pointer;
+//     transition-property: border, background-color;
+//     transition-duration: var(--transition-time), var(--transition-time);
+//     transition-timing-function: var(--cubic-bezier), var(--cubic-bezier);
+//   }
+//   @media screen and (min-width: 480px) {
+//     font-size: 12px;
+//     line-height: 1.71;
+//     margin-bottom: 30px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     font-size: 14px;
+//   }
+// }
+
+// .franchise__policy span:hover,
+// .franchise__checkbox-input:focus + .franchise__policy span {
+//   border: 2px solid var(--accent-primary);
+// }
+// .franchise__checkbox-input:checked + .franchise__policy span {
+//   background-color: var(--accent-primary);
+//   border: 0;
+// }
+// .franchise__check {
+//   fill: transparent;
+//   transition-property: fill;
+//   transition-duration: var(--transition-time);
+//   transition-timing-function: var(--cubic-bezier);
+// }
+// .franchise__checkbox-input:checked + .franchise__policy .franchise__check {
+//   fill: var(--accent-green);
+// }
+
+.franchise__link {
+  color: var(--accent-primary);
+  text-decoration: none;
+}
+.franchise-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.franchise__btm {
+  background: var(--accent-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 24px;
+  border: 0;
+  width: 150px;
+  margin: 0 auto;
+  height: 37.5px;
+  color: var(--white-color);
+  cursor: pointer;
+  @include font(16px, 1.875, 0.03em, 700);
+
+  @media screen and (min-width: 480px) {
+    width: 200px;
+    height: 50px;
+  }
+}

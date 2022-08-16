@@ -1,0 +1,36 @@
+.arrow {
+  position: relative;
+}
+.scrollup {
+  text-align: center;
+  padding: 7px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  color: rgba(212, 20, 68, 0.7);
+  background-image: linear-gradient(90deg, rgba(255, 165, 186, 0.7), rgba(255, 165, 186, 0.7));
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 10;
+  box-shadow: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-image: linear-gradient(90deg, rgba(194, 226, 151, 0.7), rgba(194, 226, 151, 0.7));
+  }
+  &-show {
+    display: block;
+  }
+}
+.scrollup__icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+.scrollup-show {
+  display: block;
+}

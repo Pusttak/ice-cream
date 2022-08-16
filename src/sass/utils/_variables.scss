@@ -1,0 +1,36 @@
+:root {
+  --accent-primary: #d41443;
+  --accent-secondary: #ffa5ba;
+  --accent-yellow: #f0d1a5;
+  --accent-green: #c2e297;
+  --button-contact: #d41342;
+  --contact-border: #e1e1e1;
+
+  --white-color: #ffffff;
+  --text-dark: #000000;
+  --text-light: #907e82;
+
+  --hover-button-dark: #c7133e;
+  --hover-button-light: #ecebeb;
+  --slider: #d31342;
+  --clients: #d9d9d9;
+
+  --bg-menu: #e17992;
+  --bg-secondary: #fff5f6;
+  --bg-clients: #fafafa;
+  --bg-hero-prod: #ffb8ca;
+
+  --button-contact: #d41342;
+  --contact-border: #e1e1e1;
+
+  --transition-time: 250ms;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font($fs, $lh, $ls, $fw: 500) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  font-weight: $fw;
+}

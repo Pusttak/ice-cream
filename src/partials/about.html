@@ -1,0 +1,75 @@
+<!-- About section -->
+<section class="about section" id="about">
+  <div class="container about__container">
+    <p class="subtitle about__subtitle">tradition and love</p>
+    <h2 class="title about__title">how it’s made?</h2>
+    <div class="about__information">
+      <picture class="about__picture">
+        <source
+          srcset="./images/about/about-desk-cow-1x.png 1x, ./images/about/about-desk-cow-2x.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/about/about-tab-cow-1x.png 1x, ./images/about/about-tab-cow-2x.png 2x"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/about/about-mob-cow-1x.png 1x, ./images/about/about-mob-cow-2x.png 2x"
+          media="(min-width:320px)"
+        />
+        <img
+          class="about__image"
+          src="./images/about/about-desk-cow-1x.png"
+          alt="a jug of milk and a cow"
+        />
+      </picture>
+      <div class="about__description">
+        <p class="about__main-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__description-text about__description-text--first">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__description-text about__description-text--second">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="about__button" type="button" data-modal-open-about>Read more</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal-about -->
+  <div class="backdrop is-hidden" data-modal-about>
+    <div class="modal-about">
+      <button class="modal-about__close-button" type="button" data-modal-close-about>
+        <svg class="modal-about__icon-close" width="11" height="11">
+          <use href="./images/sprites.svg#about-icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="title modal-about__title">The Science of <br />Ice Cream</h2>
+      <h3 class="subtitle modal-about__subtitle">How is ice cream made?</h3>
+      <p class="modal-about__text">
+        To transform cream (and milk) into ice cream, you add sugar, flavorings, and sometimes egg
+        yolk and then chill, churn, and freeze the mixture. All of this happens in three distinct
+        steps.
+      </p>
+      <h3 class="subtitle modal-about__subtitle">Mixing</h3>
+      <p class="modal-about__text">
+        First, milk, cream, and sugar are heated until the sugar dissolves. The mixture is cooled,
+        and then flavorings are added. For a richer-tasting custard-based ice cream, also known as
+        French-style, the hot cream-sugar mixture is whisked into egg yolks and then returned to the
+        heat to thicken the egg proteins and kill any bacteria.
+      </p>
+      <h3 class="subtitle modal-about__subtitle">Freezing</h3>
+      <p class="modal-about__text">
+        Next, the liquid ice cream goes into an ice cream machine. In the machine’s churn (a
+        container with chilled walls and a mixing paddle), the mixture is stirred as it freezes
+        until it’s as thick as softly whipped cream.
+      </p>
+    </div>
+  </div>
+  <!-- <script src="./js/modal-about.js"></script> -->
+</section>

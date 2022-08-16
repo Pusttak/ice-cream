@@ -1,0 +1,32 @@
+﻿/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/visually-hidden';
+
+@import './utils/arrow';
+@import './utils/slider';
+@import './utils/backdrop';
+
+@import './burger';
+@import './header';
+
+@import './hero';
+@import './prod';
+@import './about';
+@import './advantages';
+@import './contact';
+@import './gallery';
+
+@import './clients';
+@import './footer';
+@import './buynow';
+@import './franchise';
+// LOCATIONS
+@import './locations';

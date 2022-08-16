@@ -1,0 +1,181 @@
+.clients__section {
+  padding-top: 40px;
+  padding-bottom: 170px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 197px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 62px;
+    padding-bottom: 234px;
+  }
+}
+
+.clients__photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.clients__box-review {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 52px;
+  padding: 40px 50px 20px;
+  background-color: var(--bg-clients);
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    margin-bottom: 42px;
+    padding: 30px 38px 28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    margin-bottom: 34px;
+    padding: 32px 54px;
+  }
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -30px;
+
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--slider);
+    box-shadow: -14px 0 var(--slider), 14px 0 var(--slider);
+    transition: box-shadow var(--animation);
+
+    @media screen and (min-width: 768px) {
+      bottom: -24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -15px;
+    }
+  }
+
+  &:hover::after {
+    box-shadow: -18px 0 var(--slider), 18px 0 var(--slider);
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -36px;
+    cursor: pointer;
+
+    content: '';
+    width: 60px;
+    height: 18px;
+
+    @media screen and (min-width: 768px) {
+      bottom: -30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -22px;
+    }
+  }
+}
+
+.clients__wrap-text {
+  position: relative;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 29.6px,
+    var(--clients) 29.6px,
+    var(--clients) 30.6px
+  );
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  &::before {
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    content: '';
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/clients/quotes.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.clients__text {
+  position: relative;
+  @include font(12px, 2.55, null, 500);
+  text-align: center;
+  color: var(--text-dark);
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 2.14, null, 500);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.88, null, 500);
+  }
+}
+
+.clients__name {
+  @include font(14px, 1.86, null, 500);
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 2.14, null, 500);
+    margin-bottom: 45px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(20px, 1.86, null, 500);
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--clients);
+  opacity: 100;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12.4px;
+  height: 12px;
+  background: url(../images/clients/pagination-current.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}

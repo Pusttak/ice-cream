@@ -1,0 +1,384 @@
+.hero-section {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 502px;
+  background-color: var(--bg-hero-prod);
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
+}
+
+.hero-container {
+  position: relative;
+
+  width: 320px;
+  height: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.hero-mob {
+  @media screen and (max-width: 767px) {
+    position: relative;
+
+    width: 320px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero-circle {
+  position: absolute;
+  bottom: 75px;
+  left: 36px;
+
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: var(--accent-secondary);
+
+  animation: fadeInAnimation ease 3s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 46px;
+    left: 307px;
+
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 75px;
+    left: 475px;
+
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero-ice-cream-img {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+
+  animation: fadeInAnimation ease 2s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(40%);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    left: 378px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 594px;
+  }
+}
+
+.hero-wrap {
+  position: absolute;
+  left: 0;
+  bottom: 160px;
+
+  @media screen and (min-width: 768px) {
+    left: 34px;
+    bottom: 173px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 115px;
+    bottom: 292px;
+  }
+}
+
+.hero-wrap__title {
+  font-family: 'Titan One';
+  @include font(26px, 1.15, 0.04em, 400);
+  color: var(--white-color);
+  text-transform: uppercase;
+
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    @include font(22px, 1.13, 0.04em, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+    @include font(38px, 1.15, 0.04em, 400);
+  }
+}
+
+.hero-wrap__title-accent {
+  display: block;
+  font-family: 'Titan One';
+  @include font(48px, 0.95, 0.04em, 400);
+  color: var(--accent-primary);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(34px, 0.91, 0.04em, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: -7px;
+
+    @include font(58px, 0.9, 0.04em, 400);
+  }
+}
+
+.hero-links {
+  display: flex;
+}
+
+.hero-links__product-link,
+.hero-links__how-link {
+  @include font(8px, 1.25, 0, 400);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 24px;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    height: 40px;
+    @include font(14px, 1.28, 0, 400);
+  }
+}
+
+.hero-links__product-link {
+  width: 62px;
+
+  color: var(--white-color);
+  background-color: var(--accent-primary);
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--hover-button-dark);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+  }
+}
+
+.hero-links__how-link {
+  margin-left: 8px;
+  width: 83px;
+
+  color: var(--accent-primary);
+  background-color: var(--white-color);
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-primary);
+    background-color: var(--hover-button-light);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    margin-left: 15px;
+  }
+}
+
+.hero-features {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-features-numbers {
+  position: absolute;
+  right: 44px;
+  top: 96px;
+
+  @media screen and (min-width: 1280px) {
+    right: 115px;
+    top: 160px;
+  }
+}
+
+.hero-features-numbers__top::before,
+.hero-features-numbers__bottom::before {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -2px;
+
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  background-color: var(--white-color);
+
+  @media screen and (min-width: 1280px) {
+    width: 30px;
+    height: 30px;
+    right: -18px;
+    top: -4px;
+  }
+}
+
+.hero-features-numbers__bottom::before {
+  right: -8px;
+
+  @media screen and (min-width: 1280px) {
+    right: -18px;
+  }
+}
+
+.hero-features-numbers__top {
+  margin-bottom: 14px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 18px;
+  }
+}
+
+.hero-features-numbers__bottom {
+  position: relative;
+  margin-right: -2px;
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
+}
+
+.hero-features-numbers__number {
+  position: relative;
+
+  text-align: right;
+
+  font-family: 'Titan One';
+  @include font(28px, 1.14, 0.04em, 400);
+
+  text-transform: uppercase;
+
+  color: var(--accent-primary);
+
+  @media screen and (min-width: 1280px) {
+    @include font(46px, 1.15, 0.04em, 400);
+  }
+}
+
+.hero-features-numbers__text {
+  text-align: right;
+
+  @include font(8px, 1.25, 0, 400);
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 1.28, 0, 400);
+  }
+}
+
+.hero-features-info {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
+  display: flex;
+
+  animation: fadeInAnimationInfo ease 1.8s;
+
+  @keyframes fadeInAnimationInfo {
+    0% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 77px;
+    bottom: 45px;
+  }
+}
+
+.hero-features-info__wrap {
+  margin-top: auto;
+  margin-bottom: 6px;
+  margin-left: -4px;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 30px;
+    margin-bottom: 11px;
+  }
+}
+
+.hero-features-info__text {
+  width: 114px;
+  margin-bottom: 7px;
+
+  @include font(8px, 1.5, 0, 400);
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    width: 200px;
+    @include font(14px, 1.42, 0, 400);
+  }
+}
+
+.hero-features-info__pic {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+
+  animation: fadeInAnimationpic ease 1.5s;
+
+  @keyframes fadeInAnimationpic {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 109px;
+  }
+}

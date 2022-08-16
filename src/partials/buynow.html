@@ -1,0 +1,66 @@
+<div class="backdrop is-hidden" data-buynow data-buynow-mob id="popup">
+  <div class="modal-buynow">
+    <button type="button" class="close-button close-popup" data-buynow-close>
+      <svg class="icon">
+        <use href="./images/sprites.svg#about-icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-buynow__header title">Order details</p>
+    <form name="order-form" autocomplete="on" class="order__form">
+      <div class="order__field">
+        <label for="order-name" class="order__label">Name</label>
+        <div class="order__icon">
+          <input type="text" name="order-name" id="order-name" class="order__input" />
+          <svg class="order__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#icecream-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order__field">
+        <label for="order-tel" class="order__label">Phone</label>
+        <div class="order__icon">
+          <input type="tel" name="order-tel" id="order-tel" class="order__input" />
+          <svg class="order__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#phone-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order__field">
+        <label for="order-mail" class="order__label">E-m@il</label>
+        <div class="order__icon">
+          <input type="email" name="order-mail" id="order-mail" class="order__input" />
+          <svg class="order__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#mail-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="order__field-comment">
+        <label for="order-comment" class="order__label">Order info</label>
+        <textarea
+          name="order-comment"
+          id="order-comment"
+          placeholder="Enter product name and amount"
+          class="order__comment"
+        ></textarea>
+      </div>
+      <div class="order__checkbox">
+        <input
+          type="checkbox"
+          name="order-policy"
+          id="order-policy"
+          class="order__checkbox-input visually-hidden"
+        />
+        <label for="order-policy" class="order__policy">
+          <span>
+            <svg class="order__check" width="11px" height="8px">
+              <use href="./images/sprites.svg#icon-check"></use>
+            </svg> </span
+          >I agree to the processing of personal data. &nbsp;<a href="#" class="order__link">
+            Privacy policy</a
+          ></label
+        >
+        <button type="submit" class="order__btm">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

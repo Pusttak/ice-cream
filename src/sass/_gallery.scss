@@ -1,0 +1,118 @@
+.gallery {
+  padding-top: 49px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(#fff5f6 45%, #fff 45%);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 66px;
+  }
+}
+
+.gallery__thumb {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -1px;
+
+  @media screen and(min-width:768px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin: -4px;
+  }
+}
+
+.gallery__column {
+  flex-basis: calc((100% - 7 * 2px) / 7);
+  margin-left: 1px;
+  margin-right: 1px;
+
+  @media screen and(min-width:768px) {
+    flex-basis: calc((100% - 7 * 8px) / 7);
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+
+  @media screen and(min-width:1280px) {
+    flex-basis: calc((100% - 7 * 12px) / 7);
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  &.is-big {
+    flex-basis: calc((100% - 7 * 2px) / 7 * 2);
+
+    @media screen and(min-width:768px) {
+      flex-basis: calc((100% - 7 * 8px) / 7 * 2);
+    }
+
+    @media screen and(min-width:1280px) {
+      flex-basis: calc((100% - 7 * 12px) / 7 * 2);
+    }
+  }
+
+  &.is-down {
+    position: relative;
+    top: 3px;
+
+    @media screen and(min-width:768px) {
+      top: 9px;
+    }
+    @media screen and(min-width:1280px) {
+      top: 17px;
+    }
+  }
+
+  &.is-up {
+    position: relative;
+    bottom: 10px;
+
+    @media screen and(min-width:768px) {
+      bottom: 20px;
+    }
+    @media screen and(min-width:1280px) {
+      bottom: 34px;
+    }
+  }
+}
+
+.gallery__row {
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 2px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and(min-width:1280px) {
+    margin-bottom: 12px;
+  }
+
+  &.is-small {
+    width: 50%;
+  }
+}
+
+.picture__wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.picture__wrapper {
+  transform: scale(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+
+.picture__wrapper:hover {
+  transform: scale(120%);
+  z-index: 1;
+}

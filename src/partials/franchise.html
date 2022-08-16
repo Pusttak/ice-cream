@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden" data-franchise>
+  <div class="franchise">
+    <button type="button" class="close-button" data-franchise-close>
+      <svg class="icon">
+        <use href="./images/sprites.svg#about-icon-close"></use>
+      </svg>
+    </button>
+    <p class="franchise__header title">Franchise request</p>
+    <form name="franchise-form" autocomplete="on" class="franchise__form">
+      <div class="franchise__field">
+        <label for="franchise-name" class="franchise__label">Company name</label>
+        <div class="franchise__icon">
+          <input type="text" name="franchise-name" id="franchise-name" class="franchise__input" />
+          <svg class="franchise__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#company-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise__field">
+        <label for="franchise-city" class="franchise__label">City</label>
+        <div class="franchise__icon">
+          <input type="text" name="franchise-city" id="franchise-city" class="franchise__input" />
+          <svg class="franchise__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#city-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise__field">
+        <label for="franchise-tel" class="franchise__label">Phone</label>
+        <div class="franchise__icon">
+          <input type="tel" name="franchise-tel" id="franchise-tel" class="franchise__input" />
+          <svg class="icon franchise__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#phone-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise__field">
+        <label for="franchise-mail" class="franchise__label">E-m@il</label>
+        <div class="franchise__icon">
+          <input type="email" name="franchise-mail" id="franchise-mail" class="franchise__input" />
+          <svg class="icon franchise__icon-img" width="18px" height="18px">
+            <use href="./images/sprites.svg#mail-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="franchise__field-comment">
+        <label for="franchise-comment" class="franchise__label">Comments</label>
+        <textarea
+          name="franchise-comment"
+          id="franchise-comment"
+          placeholder="Description of the company and other comments."
+          class="franchise__comment"
+        ></textarea>
+      </div>
+      <!-- <div class="franchise__checkbox">
+        <input
+          type="checkbox"
+          name="franchise-policy"
+          id="franchise-policy"
+          class="franchise__checkbox-input visually-hidden"
+        />
+        <label for="franchise-policy" class="franchise__policy">
+          <span>
+            <svg class="franchise__check" width="11px" height="8px">
+              <use href="./images/sprites.svg#icon-check"></use>
+            </svg> </span
+          >Agree with public agreement. &nbsp;<a href="#" class="franchise__link">
+            Privacy policy</a
+          ></label
+        > 
+      </div>-->
+      <div class="franchise-submit">
+        <button type="submit" class="franchise__btm">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
